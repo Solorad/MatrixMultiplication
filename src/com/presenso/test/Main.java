@@ -3,11 +3,13 @@ package com.presenso.test;
 public class Main {
 
     public static void main(String[] args) {
-        int n = 300;
-        double a[][] = MatrixService.getSquare1Matrix(n);
-        double b[][] = MatrixService.getSquare1Matrix(n);
-        double[][] square = MatrixService.multiplySquareMatrixes(a, b);
-        check(square, n);
+        int n = 256;
+        for (int i = 0; i < 100; i++) {
+            double a[][] = MatrixService.getSquare1Matrix(n);
+            double b[][] = MatrixService.getSquare1Matrix(n);
+            double[][] square = MatrixService.multiplySquareMatrixes(a, b);
+            check(square, n);
+        }
     }
 
     static void check(double[][] c, int n) {
