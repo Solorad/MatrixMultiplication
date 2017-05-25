@@ -26,4 +26,4 @@ To guard data from race conditions when multiple threads may attempt to do non-a
 
 
 ### Non-power of 2 sized matrices.
-Plain multiplication for each result value. n*n tasks would be applied to xecutor.
+Plain multiplication for each result value. n*n tasks would be applied to executor.
