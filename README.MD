@@ -4,7 +4,8 @@ Implementation of matrix multiplication algorithm using Java concurrency and OOP
 
 ## Details
 Simple array of arrays was used as a matrix representation. Matrix multiplication logic is placed in `MatrixService`.
-For multiplication recursive algorithm was chosen. That's why `ForkJoinPool` with `RecursiveAction` is perfectly fit here.
+For multiplication of power-2 sized square matrices recursive algorithm was chosen. `ForkJoinPool` with `RecursiveAction` is perfectly fit here.
+For non power-2 sized matrices, simple Future object was chosen. No shared memory there.
 
 ## Algorithm
 ### Square Matrix with power of 2 size
